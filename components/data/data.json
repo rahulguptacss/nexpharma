@@ -1,0 +1,210 @@
+{
+  "common": {
+    "Header": {
+      "logo": "/logo/logo.webp",
+      "logo_alt": "NexPharma Healthcare & Pharmaceuticals",
+      "links": [
+        { "name": "Home", "href": "#home" },
+        { "name": "About Us", "href": "#about" },
+        { "name": "Our Expertise", "href": "#expertise" },
+        { "name": "Our Products", "href": "#products" },
+        { "name": "Research & Development", "href": "#research" },
+        { "name": "Testimonials", "href": "#stories" },
+        { "name": "FAQs", "href": "#faq" }
+      ],
+      "button_text": "Contact",
+      "button_href": "#contact",
+      "button_icon": "→",
+      "menu_label": "Open menu",
+      "close_label": "Close menu"
+    },
+    "Footer": {
+      "logo": "/logo/logo-w.webp",
+      "logo_alt": "NexPharma Healthcare & Pharmaceuticals",
+      "description": "A trusted pharmaceutical company committed to delivering high-quality, safe and effective healthcare solutions.",
+      "links_title": "Quick Links",
+      "link_mark": "›",
+      "links": [
+        { "name": "Home", "href": "#home" },
+        { "name": "About Us", "href": "#about" },
+        { "name": "Our Expertise", "href": "#expertise" },
+        { "name": "Products", "href": "#products" },
+        { "name": "R&D", "href": "#research" },
+        { "name": "Testimonials", "href": "#stories" },
+        { "name": "FAQs", "href": "#faq" },
+        { "name": "Contact Us", "href": "#contact" }
+      ],
+      "contact_title": "Contact Info",
+      "address_label": "Address",
+      "address": "123 Education Lane, New York, NY 10001",
+      "phone_label": "Phone",
+      "phone": "+100000000000",
+      "phone_href": "tel:+100000000000",
+      "email_label": "Email",
+      "email": "info@xyz.com",
+      "email_href": "mailto:info@xyz.com",
+      "copyright": "Copyright © 2026. All rights reserved. Powered by Lestow",
+      "socials": [
+        { "name": "LinkedIn", "href": "https://linkedin.com" },
+        { "name": "Facebook", "href": "https://facebook.com" },
+        { "name": "Instagram", "href": "https://instagram.com" }
+      ]
+    },
+    "BackToTop": { "aria_label": "Back to top" }
+  },
+  "categories": {
+    "Healthcare": {
+      "templateComponents": {
+        "template-1": {
+          "pages": {
+            "home": {
+              "title": "Home",
+              "pageName": "Home",
+              "metadata": {
+                "title": "NexPharma | Advancing Healthcare",
+                "description": "Innovative pharmaceutical solutions that improve lives and advance healthcare for a healthier tomorrow."
+              },
+              "components": [
+                { "key": "HeroSection", "component": "Hero" },
+                { "key": "AboutSection", "component": "About" },
+                { "key": "ExpertiseSection", "component": "Expertise" },
+                { "key": "ProductsSection", "component": "Products" },
+                { "key": "ResearchSection", "component": "Research" },
+                { "key": "StoriesSection", "component": "Testimonials" },
+                { "key": "ContactSection", "component": "Contact" },
+                { "key": "FaqSection", "component": "Faq" }
+              ]
+            }
+          },
+          "sections": {
+            "hero": {
+              "id": "home",
+              "eyebrow": "Healthcare & Pharmaceuticals",
+              "title_line": "Advancing",
+              "title_highlight": "Healthcare",
+              "title_mid": "for a Healthier",
+              "title_end": "Tomorrow",
+              "lead": "Innovative and trusted pharmaceutical solutions to improve lives and support better health worldwide.",
+              "image": "/hero/scientist.webp",
+              "image_alt": "Scientist in protective gear holding a capsule in a laboratory",
+              "stats": [
+                { "icon": "pill", "value": "125+", "label": "Expert Doctors", "tone": "teal" },
+                { "icon": "people", "value": "65+", "label": "Families in Our Care", "tone": "navy" }
+              ]
+            },
+            "about": {
+              "id": "about",
+              "eyebrow": "About Us",
+              "title": "Our vision and values:",
+              "title_accent": "dedicated to caring for our patients with compassion",
+              "title_end": "and skill",
+              "text": "We deliver trusted healthcare by combining advanced medicine, patient focus, and a passion for wellness. Our team brings care, skill, and kindness to every person we help.",
+              "image": "/about/team.webp",
+              "image_alt": "Doctors and nurses standing together"
+            },
+            "expertise": {
+              "id": "expertise",
+              "eyebrow": "Our Expertise",
+              "title": "Our Core Expertise",
+              "title_accent": "Across Healthcare",
+              "lead": "Leveraging deep industry knowledge and advanced capabilities to deliver high-quality, trusted healthcare solutions.",
+              "items": [
+                { "icon": "doctor", "title": "Primary Care Focus", "text": "Our team delivers quality healthcare with a personal approach." },
+                { "icon": "dna", "title": "Diagnostic Expertise", "text": "We offer advanced testing, thorough exams, and fast results." },
+                { "icon": "portal", "title": "Specialist Support", "text": "Our doctors provide guidance for every patient's health needs." }
+              ]
+            },
+            "products": {
+              "id": "products",
+              "eyebrow": "Our Products",
+              "title": "Our Product Range",
+              "title_accent": "for Better Healthcare",
+              "lead": "A comprehensive range of high-quality, safe and effective pharmaceutical products that support healthier lives.",
+              "items": [
+                { "icon": "pill", "title": "Tablets", "text": "Reliable and effective tablet formulations.", "image": "/products/tablets.webp", "image_alt": "Tablets spilled from an amber bottle" },
+                { "icon": "capsule", "title": "Capsules", "text": "High-quality capsules for better therapeutic results.", "image": "/products/capsules.webp", "image_alt": "Blue and white capsules" },
+                { "icon": "vial", "title": "Injections", "text": "Sterile and trusted injectable solutions.", "image": "/products/injections.webp", "image_alt": "Injection vials and a syringe" },
+                { "icon": "drop", "title": "Syrups", "text": "Patient-friendly liquid formulations for all age groups.", "image": "/products/syrups.webp", "image_alt": "Amber syrup bottle with a measuring cup" }
+              ]
+            },
+            "research": {
+              "id": "research",
+              "eyebrow": "Research & Development",
+              "title": "Driving Innovation Through",
+              "title_accent": "Research & Development",
+              "text": "We continuously invest in research and development to create safe, effective, and high-quality pharmaceutical solutions for better health outcomes.",
+              "image": "/research/lab.webp",
+              "image_alt": "Scientist in a mask and gloves using a microscope",
+              "points": [
+                { "icon": "flask", "title": "Innovation Focused" },
+                { "icon": "scope", "title": "Advanced Facilities" },
+                { "icon": "leaf", "title": "High-Quality Formulations" }
+              ]
+            },
+            "testimonials": {
+              "id": "stories",
+              "eyebrow": "Testimonials",
+              "title": "What Our Clients Say",
+              "title_accent": "About Our Healthcare Solutions",
+              "lead": "Trusted by healthcare professionals and partners for our quality, reliability, and commitment to better health outcomes.",
+              "quote_mark": "“",
+              "star": "★",
+              "prev_label": "Previous testimonial",
+              "next_label": "Next testimonial",
+              "items": [
+                { "quote": "The quality and consistency of their products are outstanding. A reliable partner for all our pharmaceutical needs.", "name": "Dr. Arjun Mehta", "role": "General Physician", "image": "/stories/arjun.webp", "image_alt": "Dr. Arjun Mehta", "stars": 5 },
+                { "quote": "Excellent range of products with timely support and great service. Their commitment to quality builds strong trust.", "name": "Dr. Priya Sharma", "role": "Consultant Physician", "image": "/stories/priya.webp", "image_alt": "Dr. Priya Sharma", "stars": 5 },
+                { "quote": "A dependable and professional pharmaceutical company. We have seen great results and patient satisfaction with their products.", "name": "Dr. Rakesh Verma", "role": "Internal Medicine", "image": "/stories/rakesh.webp", "image_alt": "Dr. Rakesh Verma", "stars": 5 },
+                { "quote": "Orders arrive on time and the documentation is always clear. Our pharmacy team recommends them without hesitation.", "name": "Dr. Neha Verma", "role": "Pharmacist", "image": "/stories/neha.webp", "image_alt": "Dr. Neha Verma", "stars": 5 }
+              ]
+            },
+            "contact": {
+              "id": "contact",
+              "eyebrow": "Contact Us",
+              "title": "Get in Touch",
+              "title_accent": "With Us",
+              "lead": "Have a query, partnership opportunity, or need more information? We'd be happy to hear from you.",
+              "address_label": "Our Address",
+              "address": "123 Education Lane, New York, NY 10001",
+              "phone_label": "Call Us",
+              "phone": "+100000000000",
+              "phone_href": "tel:+100000000000",
+              "email_label": "Email Us",
+              "email": "info@xyz.com",
+              "email_href": "mailto:info@xyz.com",
+              "form_title": "Send Us a Message",
+              "name_placeholder": "Your Name *",
+              "email_placeholder": "Email Address *",
+              "phone_placeholder": "Phone Number",
+              "subject_placeholder": "Product Name *",
+              "company_placeholder": "Quantity Required",
+              "category_placeholder": "Select Category *",
+              "categories": ["Tablets", "Capsules", "Injections", "Syrups", "Other"],
+              "message_placeholder": "Your Message *",
+              "button_text": "Send Message",
+              "success_message": "Thank you. Our team will reply shortly."
+            },
+            "faq": {
+              "id": "faq",
+              "eyebrow": "FAQs",
+              "title": "Frequently Asked",
+              "title_accent": "Questions",
+              "lead": "Find quick answers to the most common questions about our products, quality, and services.",
+              "image": "/faq/pills.webp",
+              "image_alt": "Tablets and capsules spilled from an amber bottle",
+              "open_icon": "+",
+              "close_icon": "−",
+              "items": [
+                { "question": "What types of pharmaceutical products do you offer?", "answer": "We offer a wide range of high-quality pharmaceutical products, including tablets, capsules, injections, syrups, and specialty formulations across various therapeutic segments." },
+                { "question": "Are your products manufactured in certified facilities?", "answer": "Yes. Our products are manufactured in certified facilities that follow documented quality and safety checks." },
+                { "question": "Do you follow international quality standards?", "answer": "Our processes follow documented quality procedures aligned with international manufacturing practice." },
+                { "question": "Can you support with contract manufacturing?", "answer": "Yes. We can discuss contract manufacturing for tablets, capsules, injections, and syrups." },
+                { "question": "How can I get in touch for business inquiries?", "answer": "Use the contact form, call +100000000000, or email info@xyz.com." }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
