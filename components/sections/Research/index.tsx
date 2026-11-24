@@ -49,7 +49,7 @@ export default function Research({ data }: { data: ResearchSectionData }) {
       <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/55 to-transparent" />
       <div className="relative mx-auto flex min-h-[520px] max-w-6xl items-center px-5 py-14 sm:px-8">
         <div className="max-w-xl rise">
-          <p className="flex items-center gap-3 text-xs font-semibold tracking-[0.16em] text-[#16324f] uppercase">
+          <p className="flex items-center gap-3 text-sm font-semibold tracking-[0.14em] text-[#16324f] uppercase">
             <span className="h-0.5 w-8 bg-[#128f97]" />
             {data.eyebrow}
           </p>

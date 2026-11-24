@@ -73,7 +73,7 @@ export default function Footer({ data }: { data: FooterData }) {
       </svg>
       <div className="relative mx-auto grid max-w-6xl gap-10 px-5 py-12 sm:px-8 md:grid-cols-2 lg:grid-cols-3">
         <div className="rise">
-          <img src={data.logo} alt={data.logo_alt} className="-mt-6 h-28 w-auto sm:-mt-8 sm:h-32" />
+          <img src={data.logo} alt={data.logo_alt} className="-mt-2 h-16 w-auto sm:-mt-8 sm:h-32" />
           <p className="-mt-3 max-w-xs text-sm leading-relaxed text-white/75">{data.description}</p>
         </div>
         <div className="lg:border-l lg:border-white/15 lg:pl-8" style={{ animation: 'rise 0.7s ease 0.1s both' }}>
@@ -84,8 +84,9 @@ export default function Footer({ data }: { data: FooterData }) {
               <ul key={columnIndex} className="space-y-2">
                 {column.map((link) => (
                   <li key={link.href}>
-                    <a href={link.href} className="text-white/75 transition hover:text-[#7fe3ea]">
-                      {data.link_mark} {link.name}
+                    <a href={link.href} className="inline-flex items-center gap-2 text-white/75 transition hover:text-[#7fe3ea]">
+                      <span aria-hidden>{data.link_mark}</span>
+                      {link.name}
                     </a>
                   </li>
                 ))}

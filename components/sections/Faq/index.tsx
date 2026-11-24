@@ -10,7 +10,7 @@ export default function Faq({ data }: { data: FaqSectionData }) {
     <section id={data.id} className="bg-white px-5 py-16 sm:px-8 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <p className="flex items-center justify-center gap-3 text-xs font-semibold tracking-[0.18em] text-[#16324f] uppercase">
+          <p className="flex items-center justify-center gap-3 text-sm font-semibold tracking-[0.14em] text-[#16324f] uppercase">
             <span className="h-0.5 w-8 bg-[#128f97]" />
             {data.eyebrow}
           </p>

@@ -4,7 +4,7 @@ export default function About({ data }: { data: AboutSectionData }) {
   return (
     <section id={data.id} className="mx-auto grid max-w-6xl items-center gap-8 px-5 pt-14 pb-8 sm:gap-12 sm:px-8 sm:pt-16 sm:pb-10 lg:grid-cols-2">
       <div className="rise">
-        <p className="flex items-center gap-3 text-xs font-semibold tracking-[0.18em] text-[#16324f] uppercase">
+        <p className="flex items-center gap-3 text-sm font-semibold tracking-[0.14em] text-[#16324f] uppercase">
           <span className="h-0.5 w-8 bg-[#128f97]" />
           {data.eyebrow}
         </p>

@@ -34,7 +34,7 @@ export default function Testimonials({ data }: { data: TestimonialsSectionData }
   return (
     <section id={data.id} className="bg-white px-5 py-16 sm:px-8 sm:py-20">
       <div className="mx-auto max-w-6xl text-center">
-        <p className="flex items-center justify-center gap-3 text-xs font-semibold tracking-[0.18em] text-[#16324f] uppercase">
+        <p className="flex items-center justify-center gap-3 text-sm font-semibold tracking-[0.14em] text-[#16324f] uppercase">
           <span className="h-0.5 w-8 bg-[#128f97]" />
           {data.eyebrow}
         </p>
@@ -43,14 +43,14 @@ export default function Testimonials({ data }: { data: TestimonialsSectionData }
           <span className="block text-[#128f97]">{data.title_accent}</span>
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-sm text-[#5d6b7c] sm:text-base">{data.lead}</p>
-        <div className="relative mt-10">
+        <div className="relative mt-10 sm:px-14">
           {canSlide && (
             <>
           <button
             type="button"
             aria-label={data.prev_label}
             onClick={() => go(index - 1)}
-            className="absolute top-1/2 left-0 z-10 grid h-11 w-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-[#d7efee] bg-[#e7f7f6] text-[#128f97] shadow-sm transition duration-300 hover:scale-105 hover:border-[#128f97] hover:bg-[#128f97] hover:text-white"
+            className="absolute top-1/2 left-0 z-10 hidden h-11 w-11 -translate-y-1/2 place-items-center rounded-full border border-[#d7efee] bg-[#e7f7f6] text-[#128f97] shadow-sm transition duration-300 hover:scale-105 hover:border-[#128f97] hover:bg-[#128f97] hover:text-white sm:grid"
           >
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 6l-6 6 6 6" />
@@ -60,7 +60,7 @@ export default function Testimonials({ data }: { data: TestimonialsSectionData }
             type="button"
             aria-label={data.next_label}
             onClick={() => go(index + 1)}
-            className="absolute top-1/2 right-0 z-10 grid h-11 w-11 translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-[#d7efee] bg-[#e7f7f6] text-[#128f97] shadow-sm transition duration-300 hover:scale-105 hover:border-[#128f97] hover:bg-[#128f97] hover:text-white"
+            className="absolute top-1/2 right-0 z-10 hidden h-11 w-11 -translate-y-1/2 place-items-center rounded-full border border-[#d7efee] bg-[#e7f7f6] text-[#128f97] shadow-sm transition duration-300 hover:scale-105 hover:border-[#128f97] hover:bg-[#128f97] hover:text-white sm:grid"
           >
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 6l6 6-6 6" />
@@ -96,7 +96,10 @@ export default function Testimonials({ data }: { data: TestimonialsSectionData }
             </div>
           </div>
           {canSlide && (
-          <div className="mt-6 flex justify-center gap-2">
+          <div className="mt-6 flex items-center justify-center gap-3">
+            <button type="button" aria-label={data.prev_label} onClick={() => go(index - 1)} className="grid h-11 w-11 place-items-center rounded-full border border-[#d7efee] bg-[#e7f7f6] text-[#128f97] sm:hidden">
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M15 6l-6 6 6 6" /></svg>
+            </button>
             {Array.from({ length: max + 1 }).map((_, dot) => (
               <button
                 key={dot}
@@ -106,6 +109,9 @@ export default function Testimonials({ data }: { data: TestimonialsSectionData }
                 className={`h-2.5 w-2.5 rounded-full transition ${dot === index ? 'bg-[#128f97]' : 'bg-[#c5e4e3]'}`}
               />
             ))}
+            <button type="button" aria-label={data.next_label} onClick={() => go(index + 1)} className="grid h-11 w-11 place-items-center rounded-full border border-[#d7efee] bg-[#e7f7f6] text-[#128f97] sm:hidden">
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M9 6l6 6-6 6" /></svg>
+            </button>
           </div>
           )}
         </div>

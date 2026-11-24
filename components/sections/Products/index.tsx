@@ -46,7 +46,7 @@ export default function Products({ data }: { data: ProductsSectionData }) {
   return (
     <section id={data.id} className="bg-white px-5 pt-6 pb-12 sm:px-8 sm:pt-8 sm:pb-16">
       <div className="mx-auto max-w-6xl text-center">
-        <p className="flex items-center justify-center gap-3 text-xs font-semibold tracking-[0.18em] text-[#16324f] uppercase">
+        <p className="flex items-center justify-center gap-3 text-sm font-semibold tracking-[0.14em] text-[#16324f] uppercase">
           <span className="h-0.5 w-8 bg-[#128f97]" />
           {data.eyebrow}
         </p>

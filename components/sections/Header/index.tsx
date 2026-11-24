@@ -9,10 +9,13 @@ export default function Header({ data }: { data: HeaderData }) {
 
   useEffect(() => {
     const onScroll = () => {
+      const line = 100;
       let current = data.links[0]?.href ?? '#home';
-      data.links.forEach((link) => {
-        const section = document.getElementById(link.href.replace('#', ''));
-        if (section && section.getBoundingClientRect().top <= 96) current = link.href;
+      [data.button_href, ...data.links.map((link) => link.href)].forEach((href) => {
+        const section = document.getElementById(href.replace('#', ''));
+        if (!section) return;
+        const box = section.getBoundingClientRect();
+        if (box.top <= line && box.bottom > line) current = href;
       });
       setActive(current);
     };
@@ -35,6 +38,7 @@ export default function Header({ data }: { data: HeaderData }) {
               <a
                 key={link.href}
                 href={link.href}
+                onClick={() => setActive(link.href)}
                 className={`relative py-2 transition duration-300 hover:text-[#128f97] ${on ? 'font-semibold text-[#128f97]' : ''}`}
               >
                 {link.name}
@@ -45,6 +49,7 @@ export default function Header({ data }: { data: HeaderData }) {
         </nav>
         <a
           href={data.button_href}
+          onClick={() => setActive(data.button_href)}
           className="group ml-auto hidden items-center gap-2 rounded-full bg-[#128f97] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-[#0e7c83] xl:ml-2 xl:inline-flex"
         >
           {data.button_text}
@@ -62,12 +67,15 @@ export default function Header({ data }: { data: HeaderData }) {
       <nav className={`grid overflow-hidden border-[#e8eef4] bg-white transition-all duration-300 xl:hidden ${open ? 'grid-rows-[1fr] border-t' : 'grid-rows-[0fr]'}`}>
         <div className="min-h-0 overflow-hidden">
           <div className="flex flex-col gap-1 px-4 py-3">
-            {data.links.map((link) => (
-              <a key={link.href} href={link.href} onClick={() => setOpen(false)} className="rounded-lg px-2 py-2 text-sm font-medium hover:bg-[#f3fbfb] hover:text-[#128f97]">
-                {link.name}
-              </a>
-            ))}
-            <a href={data.button_href} onClick={() => setOpen(false)} className="mt-2 inline-flex w-fit items-center gap-2 rounded-full bg-[#128f97] px-5 py-2.5 text-sm font-semibold text-white">
+            {data.links.map((link) => {
+              const on = active === link.href;
+              return (
+                <a key={link.href} href={link.href} onClick={() => { setActive(link.href); setOpen(false); }} className={`rounded-lg px-2 py-2 text-sm font-medium hover:bg-[#f3fbfb] hover:text-[#128f97] ${on ? 'bg-[#f3fbfb] font-semibold text-[#128f97]' : ''}`}>
+                  {link.name}
+                </a>
+              );
+            })}
+            <a href={data.button_href} onClick={() => { setActive(data.button_href); setOpen(false); }} className="mt-2 inline-flex w-fit items-center gap-2 rounded-full bg-[#128f97] px-5 py-2.5 text-sm font-semibold text-white">
               {data.button_text} {data.button_icon}
             </a>
           </div>

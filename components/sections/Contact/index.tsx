@@ -39,8 +39,8 @@ function Icon({ name }: { name: string }) {
   if (name === 'pill') {
     return (
       <svg {...props}>
-        <rect x="8" y="3" width="8" height="8" rx="4" />
-        <rect x="8" y="11" width="8" height="10" rx="4" />
+        <path d="M8 7h8l1 3v9a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-9l1-3z" />
+        <path d="M9 7V5a3 3 0 0 1 6 0v2M8 12h8" />
       </svg>
     );
   }
@@ -101,7 +101,7 @@ export default function Contact({ data }: { data: ContactSectionData }) {
     <section id={data.id} className="overflow-hidden bg-[#f7fbfd] px-5 py-16 sm:px-8 sm:py-20">
       <div className="mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-2">
         <div className="rise">
-          <p className="flex items-center gap-3 text-xs font-semibold tracking-[0.16em] text-[#16324f] uppercase">
+          <p className="flex items-center gap-3 text-sm font-semibold tracking-[0.14em] text-[#16324f] uppercase">
             <span className="h-0.5 w-8 bg-[#128f97]" />
             {data.eyebrow}
           </p>

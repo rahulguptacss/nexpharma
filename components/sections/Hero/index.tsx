@@ -57,7 +57,7 @@ export default function Hero({ data }: { data: HeroSectionData }) {
     <section id={data.id} className="flex flex-col bg-white md:relative md:block md:h-[calc(100svh-78px)] md:overflow-hidden md:bg-[#eef6f8]">
       <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pt-8 pb-5 md:flex md:h-full md:items-center md:px-8 md:py-10">
         <div className="max-w-xl rise">
-          <p className="flex items-center gap-3 text-[11px] font-semibold tracking-[0.14em] text-[#16324f] uppercase md:text-xs md:tracking-[0.16em]">
+          <p className="flex items-center gap-3 text-sm font-semibold tracking-[0.14em] text-[#16324f] uppercase">
             <span className="h-0.5 w-8 bg-[#128f97]" />
             {data.eyebrow}
           </p>

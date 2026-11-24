@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 90px;
+}
+
 body {
   background: #fff;
   color: var(--ink);

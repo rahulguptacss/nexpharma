@@ -50,7 +50,7 @@ export default function Expertise({ data }: { data: ExpertiseSectionData }) {
   return (
     <section id={data.id} className="bg-white px-5 pt-8 pb-8 sm:px-8 sm:pt-10 sm:pb-10">
       <div className="mx-auto max-w-6xl text-center">
-        <p className="flex items-center justify-center gap-3 text-xs font-semibold tracking-[0.18em] text-[#16324f] uppercase">
+        <p className="flex items-center justify-center gap-3 text-sm font-semibold tracking-[0.14em] text-[#16324f] uppercase">
           <span className="h-0.5 w-8 bg-[#128f97]" />
           {data.eyebrow}
         </p>
